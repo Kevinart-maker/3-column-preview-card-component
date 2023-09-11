@@ -1,0 +1,82 @@
+  @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Lexend+Deca&family=Montserrat&family=Outfit&family=Quicksand&display=swap');
+
+*{
+    transition: all 0.2s ease;
+}
+.main-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: 'Lexend Deca', sans-serif;
+    color: white;
+}
+.container h1{
+    font-family: 'Big Shoulders Display';
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+}
+/* icon size */
+img{
+    max-width: 30%;
+}
+/* button postioning and styling */
+.btn-container{margin-top: 60px;}
+.btn{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline;
+    cursor: pointer;
+}
+.btn:hover{
+    border: 1px solid white;
+    background: none;
+    color: white !important;
+}
+.sedan, .suv, .lux{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    font-weight: 400;
+}
+.sedan{
+    background-color: hsl(31, 77%, 52%);
+}
+.sedan .btn{
+    color: hsl(31, 77%, 52%);
+}
+.suv{
+    background-color: hsl(184, 100%, 22%);
+}
+.suv .btn{
+    color: hsl(184, 100%, 22%);
+}
+.lux{
+    background-color: hsl(179, 100%, 13%);
+}
+.lux .btn{
+    color: hsl(179, 100%, 13%);
+}
+
+/* Responsiveness */
+
+@media (max-width: 375px) {
+    .main-container{height: auto;}
+    .container{
+        display: grid;
+        grid-template-columns: auto;
+        font-family: 'Lexend Deca', sans-serif;
+        color: white;
+    }
+}
